@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js">
+$(function() {
+  $(".bg").mouseenter(function() {
+    var thisPX = $(this).offset().left;
+    var thisPY = $(this).offset().top;
+    var boxWidth = $(this).outerWidth();
+    var boxHeight = $(this).outerHeight();
+    $(this).addClass("threeD");
+    $(".threeD").mousemove(function(event) {
+      var mouseX = event.pageX - thisPX;
+      var mouseY = event.pageY - thisPY;
+      var X;
+      var Y;
+      if (mouseX > boxWidth / 2) {
+        X = mouseX - boxWidth/2;
+      } else {
+        X = mouseX - boxWidth/2;
+      }
+      if (mouseY > boxHeight / 2) {
+        Y = boxHeight/2 - mouseY;
+      } else {
+        Y = boxHeight/2 - mouseY;
+      }
+      $(".threeD").css({
+        "-webkit-transform": "rotateY(" + X / 50 + "deg) " + "rotateX(" + Y / 50 + "deg)"
+      });
+      
+      // console.log(X + "," + Y);
+    });
+  });
+  $(".bg").mouseleave(function() {
+    $(this).removeClass("threeD");
+    $(this).css({
+      "-webkit-transform": "rotateY(0deg) rotateX(0deg)"
+    });
+  });
+});
+
+</script>
+ 
+	
+</script>
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="nav">
+	<!--shangbufen-->
+<div class="top">
+       <div class="top1">
+            
+         <h1 id=logo>
+                  <a href="http://www.smartisan.com/#/home">锤子官网</a>
+         </h1>
+        
+         <div class="log">
+             <div class="juzhong"><a href="#" style="text-decoration:none">登录</a></div>
+         </div>
+          <div class="daohang">
+                    <ul><li><a href="#"  style="text-decoration:none;color:#FFF">在线商城</a></li></ul>
+                    <ul><li><a href="#" style="text-decoration:none">smartisan M1/M1L</a></li></ul>
+                    <ul><li><a href="#" style="text-decoration:none">smartisan OS</a></li></ul>
+                    <ul><li><a href="#" style="text-decoration:none">欢喜云</a></li></ul>
+                    <ul><li><a href="#" style="text-decoration:none">应用下载</a></li></ul>
+                    <ul><li><a href="#" style="text-decoration:none">官方论坛</a></li></ul>
+         </div>
+         
+      </div>     
+            
+            
+        
+        
+</div>
+    <!--shangbufen-->
+   <!-- daohang-->
+<div class="nav">
+  <div class="nav1">
+    	<ul>
+        	<li>
+            <a href="#" style="font-weight:bold;font-size:10px">精选</a>
+            </li>
+            <li class="point">
+            <a href="#">手机</a>
+            </li>
+            <li class="point" ><a href="#">耳机/音箱</a></li>
+            <li class="point"><a href="#">背壳/保护套</a></li>
+            <li class="point"><a href="#">"情怀"背壳</a></li>
+            <li class="point"><a href="#">其他周边</a></li>
+            <li class="point"><a href="#">保修服务</a></li>
+            <li class="point"><a href="#">全部商品</a></li>
+           
+        </ul>
+        <div class="mark">
+		  <a href="#" style="text-decoration:none;color:#6D6D6D">购物车<span class="zero1" style="text-indent:1px">0</span>
+          	<div class="tanchu">购物车是空的</div>
+          </a>
+  		</div> 
+ 
+</div>
+<!--daohang-->
+<!--neirong-->
+<div class="banner">
+	<div class="pic">
+    	<span class="banner1 b">
+        	<span class="banner2 c"></span>
+        </span>
+    </div>
+</div>
+<!--neirong-->
+
+
+
+</div>
+
+</body>
+</html>
