@@ -3,55 +3,12 @@
 <head>
 <meta charset="utf-8">
 <title>无标题文档</title>
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js">
-$(function() {
-  $(".bg").mouseenter(function() {
-    var thisPX = $(this).offset().left;
-    var thisPY = $(this).offset().top;
-    var boxWidth = $(this).outerWidth();
-    var boxHeight = $(this).outerHeight();
-    $(this).addClass("threeD");
-    $(".threeD").mousemove(function(event) {
-      var mouseX = event.pageX - thisPX;
-      var mouseY = event.pageY - thisPY;
-      var X;
-      var Y;
-      if (mouseX > boxWidth / 2) {
-        X = mouseX - boxWidth/2;
-      } else {
-        X = mouseX - boxWidth/2;
-      }
-      if (mouseY > boxHeight / 2) {
-        Y = boxHeight/2 - mouseY;
-      } else {
-        Y = boxHeight/2 - mouseY;
-      }
-      $(".threeD").css({
-        "-webkit-transform": "rotateY(" + X / 50 + "deg) " + "rotateX(" + Y / 50 + "deg)"
-      });
-      
-      // console.log(X + "," + Y);
-    });
-  });
-  $(".bg").mouseleave(function() {
-    $(this).removeClass("threeD");
-    $(this).css({
-      "-webkit-transform": "rotateY(0deg) rotateX(0deg)"
-    });
-  });
-});
-
-</script>
- 
-	
-</script>
-
 
 <link href="css/style.css" rel="stylesheet" type="text/css">
 
 </head>
 
-<body class="nav">
+<body>
 	<!--shangbufen-->
 <div class="top">
        <div class="top1">
@@ -108,8 +65,8 @@ $(function() {
 <!--neirong-->
 <div class="banner">
 	<div class="pic">
-    	<span class="banner1 b">
-        	<span class="banner2 c"></span>
+    	<span class="banner1">
+        	<span class="banner2"></span>
         </span>
     </div>
 </div>
