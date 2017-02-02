@@ -7,17 +7,28 @@
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
 	var n;
-	function fn(){
-		var n = document.getElementById("a123");
-		n.src="img/253.jpg";
-		var href1 = document.getElementById("lianjie");
+	function fn(t){
+		for(var i=1;i<=4;i++){
+			var n = document.getElementById("a123"+i);
+		n.src="img/253.jpg";}
+		for(var j=1;j<=4;j++){
+			var href1 = document.getElementById("lianjie"+j);
 		href1.href="http://www.baidu.com"}
-	function fnn(){
-		var m=document.getElementById("a123");
-		m.src="img/253X253.jpg";
-		var href2 = document.getElementById("lianjie");
-		href2.href="http://www.taobao.com"
 		}
+	function fnn(d){
+		for(var i=1;i<=4;i++){
+			var m=document.getElementById("a123"+i);
+		m.src="img/253X253.jpg";}
+		for(var j=1;j<=4;j++){
+			var href2 = document.getElementById("lianjie"+j);
+		href2.href="http://www.taobao.com"}
+		}
+	function kuang(){
+		var obj=document.getElementById("xq");
+		obj.style.display="block"}
+	function xiaoshi(){
+		var obj=document.getElementById("xq");
+		obj.style.display="none"}
 </script>
 
 </head>
@@ -45,7 +56,7 @@
          
       </div>     
             
-            
+      <div style="clear:both"></div>       
         
         
 </div>
@@ -85,6 +96,7 @@
             <p class="banner1">&nbsp; </p>
         </div>
     </div><!--banner部分-->
+     <div style="clear:both"></div>
     <div class="campaign">
     
     	<ul class="box">
@@ -94,7 +106,7 @@
             <li><img src="img/box_pic1.src"><a href="https://www.baidu.com/"></a></li>
         
         </ul>
-    
+     <div style="clear:both"></div>
     </div>
     
   </div><!--内容margin0-->
@@ -107,37 +119,37 @@
       <h5>热门商品</h5>
       <div class="allbox" style="background-color:#fff;height:429px;position:relative"> 
                 <div class="box_1">
-                      <img id="a123" src="img/253X253.jpg">
+                      <img id="a1231" src="img/253X253.jpg">
                        <div class="jieshao">
                        <h6 class="ng-binding">Smartisan M1/M1L 软胶保护套</h6>
                      <p style="text-align:center;font-size:12px;line-height:1.2;color:#b2b2b2">TPU环保材质、细腻防滑、防油污</p>
                        </div>
                       <div class="dian">
-                       <p onmouseover="fnn()"><span></span></p>
-                       <p onmouseover="fn()"><span></span></p>
+                       <p onmouseover="fnn(this)"><span></span></p>
+                       <p onmouseover="fn(this)"><span></span></p>
                       </div>
                       <div class="jiage" style="color:#DE4037">
                       	<span style="font-size:14px;line-height:1.2;">￥</span><span style="font-size:18px">49.00</span>
                       </div>
-                      <a id="lianjie" href="#"></a>
+                      <a id="lianjie1" href="#"></a>
                  </div>
                   <div class="box_1 wei">
-                      <img id="a123" src="img/253X253.jpg">
+                      <img id="a1232" src="img/253X253.jpg">
                        <div class="jieshao">
                        <h6 class="ng-binding">Smartisan M1/M1L 软胶保护套</h6>
                      <p style="text-align:center;font-size:12px;line-height:1.2;color:#b2b2b2">TPU环保材质、细腻防滑、防油污</p>
                        </div>
                       <div class="dian">
-                       <p onmouseover="fnn()"><span></span></p>
-                       <p onmouseover="fn()"><span></span></p>
+                       <p onmouseover="fnn(this)"><span></span></p>
+                       <p onmouseover="fn(this)"><span></span></p>
                       </div>
                       <div class="jiage" style="color:#DE4037">
                       	<span style="font-size:14px;line-height:1.2;">￥</span><span style="font-size:18px">49.00</span>
                       </div>
-                      <a id="lianjie" href="#"></a>
+                      <a id="lianjie2" href="#"></a>
                  </div>
                   <div class="box_1 wei">
-                      <img id="a123" src="img/253X253.jpg">
+                      <img id="a1233" src="img/253X253.jpg">
                        <div class="jieshao">
                        <h6 class="ng-binding">Smartisan M1/M1L 软胶保护套</h6>
                      <p style="text-align:center;font-size:12px;line-height:1.2;color:#b2b2b2">TPU环保材质、细腻防滑、防油污</p>
@@ -149,10 +161,10 @@
                       <div class="jiage" style="color:#DE4037">
                       	<span style="font-size:14px;line-height:1.2;">￥</span><span style="font-size:18px">49.00</span>
                       </div>
-                      <a id="lianjie" href="#"></a>
+                      <a id="lianjie3" href="#"></a>
                  </div>
                   <div class="box_1 wei">
-                      <img id="a123" src="img/253X253.jpg">
+                      <img id="a1234" src="img/253X253.jpg">
                        <div class="jieshao">
                        <h6 class="ng-binding">Smartisan M1/M1L 软胶保护套</h6>
                      <p style="text-align:center;font-size:12px;line-height:1.2;color:#b2b2b2">TPU环保材质、细腻防滑、防油污</p>
@@ -164,27 +176,101 @@
                       <div class="jiage" style="color:#DE4037">
                       	<span style="font-size:14px;line-height:1.2;">￥</span><span style="font-size:18px">49.00</span>
                       </div>
-                      <a id="lianjie" href="#"></a>
+                      <div id="xq">查看详情</div>
+                      <a id="lianjie4" href="#" onMouseOver="kuang()" onMouseOut="xiaoshi()"></a>
                  </div>
                  
          
         
      </div>  
     </div><!--标题-->
-    <div class="yy">
-      123
+    <div class="buttom1">
+      <div class="container">
+        <div class="list_top">
+        	<ul class="nav_l">
+            	<li>
+                	<h3>订单服务</h3>
+                    <ul>
+                    	<li>购买指南</li>
+                        <li>支付方式</li>
+                        <li>送货政策</li>
+                    </ul>
+                </li>
+               <li>
+                 <h3>服务支持</h3>
+                   <ul>
+                    <li>售后服务</li>
+                    <li>维修门店</li>
+                    <li>零售门店</li>
+                   </ul>
+                </li>
+                <li>
+                	<h3>自助服务</h3>
+                    <ul>
+                      <li>热点咨询</li>
+                      <li>预约购买</li>
+                      <li>订单物流</li>
+                    </ul>
+                </li>
+                <li>
+                	<h3>媒体中心</h3>
+                    <ul>
+                    	<li>新闻动态</li>
+                        <li>官方视频</li>
+                        <li>图片资源</li>
+                    </ul>
+                </li>
+               <li>
+                	<h3>关于公司</h3>
+                    <ul>
+                    	<li>公司简介</li>
+                        <li>加入我们</li>
+                        <li>联系我们</li>
+                    </ul>
+                </li>
+                <li>
+                	<h3>关于我们</h3>
+                    <ul>
+                    	<li>新浪微博</li>
+                        <li>官方微信</li>
+                        <li>官方贴吧</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav_r">
+            	<li class="tel">400-619-0909</li>
+                <li class="time">周一至周日 9:00-18:00（仅收市话费）</li>
+                <li><a class="help" href="#">在线帮助</a></li>
+            </ul>
+        </div>
+        <div class="list_bottom">
+         <h4>Copyright © <span copyright-year="">2017</span>, Smartisan Digital Co., Ltd. All Rights Reserved.</h4>
+         <h5 class="company">北京锤子数码科技有限公司</h5>
+         <ul class="privacy">
+         <li><a href="#">法律声明</a></li>
+         <li><a href="#">隐私条款</a></li>
+         <li class="devstore"><a href="#">开发者中心</a></li>
+         </ul>
+          <h6>
+          <a href="http://www.miibeian.gov.cn/" target="_blank">
+          <span>京ICP备14041720号-1</span>
+          <span>京ICP证140622号</span>
+          <span>京公网安备11010502025474</span>
+          </a>
+          </h6>
+        </div>
+      </div>
         
-    </div>
+    </div><!--底部-->
    
 </div>
 <!--展示部分-->
-<!--dibu -->
 
 
 
 
 
-</div>
+
 
 </body>
 </html>
