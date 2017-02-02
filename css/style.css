@@ -266,9 +266,9 @@ line-height:28px;
 .allbox{
 	background-color:#fff;
 	height:429px;
-	overflow:hidden;
+	clear:both;
 	position:relative;
-	sss
+	
 	}
 .box_1 img{
     margin:50px auto;
